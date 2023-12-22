@@ -50,5 +50,5 @@ struct MapView: View {
 }
 
 #Preview {
-    MapView(searchKey: "東京駅")
+    MapView(searchKey: "東京駅", mapType: .hybrid)
 }

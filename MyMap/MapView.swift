@@ -8,8 +8,15 @@
 import SwiftUI
 import MapKit
 
+enum MapType {
+    case standard
+    case satellite
+    case hybrid
+}
+
 struct MapView: View {
-    var searchKey: String
+    let searchKey: String
+    let mapType: MapType
     @State var targetCoordinate = CLLocationCoordinate2D()
     @State var cameraPosition: MapCameraPosition = .automatic
     
